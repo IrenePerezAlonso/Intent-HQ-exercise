@@ -1,11 +1,5 @@
 import React, { useState } from "react";
 
-const data = [
-  { id: 1, value: 0 },
-  { id: 2, value: 0 },
-  { id: 3, value: 0 },
-];
-
 function Counter(props) {
 
   const { value } = props;
@@ -26,6 +20,13 @@ function Counter(props) {
 }
 
 function App() {
+  
+  const data = [
+    { id: 1, value: 0 },
+    { id: 2, value: 0 },
+    { id: 3, value: 0 },
+  ];
+
   return (
     <div>
       {data.map((counter) => (
