@@ -1,22 +1,8 @@
 import React, { useState } from "react";
 import './App.css';
 
-function Counter(props) {
-  const { value } = props;
-  const [count, setCounter] = useState(value);
-  
-  const removeValue = counter => setCounter(counter - 1);
-  const addValue = counter => setCounter(counter + 1);
+function Total(props) {
 
-  return (
-    <div className="counter">
-      <b className="counter-value">{count}</b>
-      <div className="counter-buttonContainer">
-        <button className="counter-buttonRemove btn" onClick={() => removeValue(count)}>-</button>
-        <button className="counter-buttonAdd btn" onClick={() => addValue(count)}>+</button>
-      </div>
-    </div>
-  );
 }
 
 function App() {
