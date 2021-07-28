@@ -11,12 +11,15 @@ function Counter(props) {
   const { value } = props;
   const [count, setCounter] = useState(value);
   
+  const removeValue = counter => setCounter(counter - 1);
+  const addValue = counter => setCounter(counter + 1);
+
   return (
     <div>
       <b>{count}</b>
       <div>
-        <button onClick={() => setCounter(count - 1)}>-</button>
-        <button onClick={() => setCounter(count + 1)}>+</button>
+        <button onClick={() => removeValue(count)}>-</button>
+        <button onClick={() => addValue(count)}>+</button>
       </div>
     </div>
   );
