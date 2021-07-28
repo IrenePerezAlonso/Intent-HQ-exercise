@@ -27,11 +27,14 @@ function App() {
     { id: 3, value: 0 },
   ];
 
+  const isolatedValue = { id: 4, value: 0 };
+
   return (
     <div>
       {data.map((counter) => (
         <Counter key={counter.id} value={counter.value} />
-      ))}
+        ))}
+      <Counter key={isolatedValue.id} value={isolatedValue.value} />
     </div>
   );
 }
