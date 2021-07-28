@@ -1,0 +1,49 @@
+.app {
+  font-family: sans-serif;
+}
+
+.counter {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin: 10px;
+
+  &-value {
+    font-size: 28px;
+  }
+
+  &-buttonRemove {
+    background-color: red;
+  }
+
+  &-buttonAdd {
+    background-color: green;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  padding: 5px 20px;
+  color: white;
+  font-size: 24px;
+  border: none;
+  margin: auto 5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px black;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:active {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+  }
+}
+
+.separator {
+  width: auto;
+  height: 1px;
+  background-color: #696969;
+  margin: 20px auto;
+}
