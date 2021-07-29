@@ -1,17 +1,19 @@
 import React, { useState } from "react";
-import { Counter, Total } from '../';
+import { Counter, Total, Input } from '../';
 import './App.css';
 
 function App() {
+  
   const data = [
     { id: 1, value: 0 },
     { id: 2, value: 0 },
     { id: 3, value: 0 },
   ];
-  const [fullData, setFullData] = useState(data || []);
-  const [isolatedData, setIsolatedData] = useState({ id: 4, value: 0 });
-  
 
+  const [fullData, setFullData] = useState(data || []);  
+  const [isolatedData, setIsolatedData] = useState({ id: 4, value: 0 });
+
+ 
   const sumValues = (array = []) => array.length && array.reduce((accum, { value }) => { 
     accum += value;
     return accum;
@@ -45,6 +47,9 @@ function App() {
       <Counter key={isolatedData.id} id={isolatedData.id} value={isolatedData.value} removeValue={handleRemoveValue} addValue={handleAddValue}  />
       <div className="separator" />
       <Total totalValue={sumValues([...fullData, isolatedData])} />
+      <Input addInitialNumber={setFullData}
+      value={fullData} 
+      ></Input>
     </div>
   );
 }
