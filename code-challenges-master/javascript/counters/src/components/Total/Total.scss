@@ -1,0 +1,21 @@
+@import '../../styles/colors';
+
+.app-totalValue {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: $blue;
+
+    &__tittle {
+        font-size: 20px;
+    }
+
+    &__number {
+        color: $yellow;
+        background-color: $red;
+        border-radius: 10px;
+        font-size: 30px;
+        margin-left: 20px;
+        padding: 5px 15px;
+    }
+}
