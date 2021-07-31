@@ -1,49 +1,35 @@
+@import '../../styles/colors';
+
 .app {
   font-family: sans-serif;
-}
 
-.counter {
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid grey;
-  margin: 10px;
-
-  &-value {
-    font-size: 28px;
+  .app-tittle {
+    color: $blue;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    text-decoration: underline;
+    text-transform: uppercase;
   }
 
-  &-buttonRemove {
-    background-color: red;
+  .app-threeCounters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
-  &-buttonAdd {
-    background-color: green;
-  }
-}
-
-.btn {
-  cursor: pointer;
-  padding: 5px 20px;
-  color: white;
-  font-size: 24px;
-  border: none;
-  margin: auto 5px;
-  border-radius: 10px;
-  box-shadow: 2px 2px black;
-
-  &:hover {
-    opacity: 0.75;
+  .app-insolatedCounter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
   }
 
-  &:active {
-    transform: translate(2px, 2px);
-    box-shadow: none;
+  .app-separator {
+    background-color: $red;
+    height: 2px;
+    margin: 20px auto;
+    width: auto;
   }
-}
 
-.separator {
-  width: auto;
-  height: 1px;
-  background-color: #696969;
-  margin: 20px auto;
 }

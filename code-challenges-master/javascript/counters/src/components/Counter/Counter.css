@@ -1,17 +1,21 @@
 .counter {
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid grey;
+  border: 2px solid #364F6B;
   margin: 10px;
+  background-color: #FDF6F0;
 }
 .counter-value {
+  color: #364F6B;
+  display: flex;
   font-size: 28px;
+  justify-content: center;
 }
 .counter-buttonRemove {
-  background-color: red;
+  background-color: #F38181;
 }
 .counter-buttonAdd {
-  background-color: green;
+  background-color: #95E1D3;
 }
 
 .btn {
@@ -22,7 +26,7 @@
   border: none;
   margin: auto 5px;
   border-radius: 10px;
-  box-shadow: 2px 2px black;
+  box-shadow: 2px 2px #364F6B;
 }
 .btn:hover {
   opacity: 0.75;

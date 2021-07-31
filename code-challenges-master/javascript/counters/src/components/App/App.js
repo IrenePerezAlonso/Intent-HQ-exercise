@@ -40,17 +40,24 @@ function App() {
   };
 
   return (
+    <>
     <div className="app">
-      {fullData.map((counter) => (
-        <Counter key={counter.id} id={counter.id} value={counter.value} removeValue={handleRemoveValue} addValue={handleAddValue} />
-        ))}
-      <Counter key={isolatedData.id} id={isolatedData.id} value={isolatedData.value} removeValue={handleRemoveValue} addValue={handleAddValue}  />
-      <div className="separator" />
+      <h1 className="app-tittle">Counters exercise</h1>
+      <div className="app-threeCounters">
+        {fullData.map((counter) => (
+          <Counter key={counter.id} id={counter.id} value={counter.value} removeValue={handleRemoveValue} addValue={handleAddValue} />
+          ))}
+      </div>
+      <div className="app-insolatedCounter">
+        <Counter key={isolatedData.id} id={isolatedData.id} value={isolatedData.value} removeValue={handleRemoveValue} addValue={handleAddValue}  />
+      </div>
+      <div className="app-separator" />
       <Total totalValue={sumValues([...fullData, isolatedData])} />
       <Input addInitialNumber={setFullData}
-      value={fullData} 
+        value={fullData} 
       ></Input>
     </div>
+    </>
   );
 }
 
