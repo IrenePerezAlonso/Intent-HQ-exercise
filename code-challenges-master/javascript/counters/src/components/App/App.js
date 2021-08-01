@@ -42,7 +42,7 @@ function App() {
   return (
     <>
     <div className="app">
-      <h1 className="app-tittle">Counters exercise</h1>
+      <h1 className="app-tittle">➖ Counters exercise ➕</h1>
       <div className="app-threeCounters">
         {fullData.map((counter) => (
           <Counter key={counter.id} id={counter.id} value={counter.value} removeValue={handleRemoveValue} addValue={handleAddValue} />

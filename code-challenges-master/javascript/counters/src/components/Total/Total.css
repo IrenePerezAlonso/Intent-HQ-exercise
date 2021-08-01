@@ -6,6 +6,7 @@
 }
 .app-totalValue__tittle {
   font-size: 20px;
+  text-transform: uppercase;
 }
 .app-totalValue__number {
   color: #FDF6F0;
