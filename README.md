@@ -2,7 +2,7 @@
 
 ## :pencil: Intructions:
 
-Run npm install, then run npm start to start the application and npm test to run the tests.
+Run `npm install`, then run `npm start` to start the application and `npm test` to run the tests.
 
 ## :page_facing_up: Description:
 
